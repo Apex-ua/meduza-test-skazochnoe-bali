@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html>
+<head>
+	<meta charset="utf-8">
+	<title>Игра «Медузы» на знание окончаний</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+ </head>
+
+<body>
+	<div id="start">
+		<h1>Бали сказочное? А Гоа? Как склоняются города? Игра «Медузы» на знание окончаний</h1>
+		<p>Как играть: Мало кто знает, как правильно склоняются города, местности и реки. «Медуза» предлагает вам проверить себя — просклоняйте известные топонимы и вставьте недостающие буквы. Проверяйте себя и двигайтесь дальше.</p>
+		<input type="button" id="startButton" value="Старт">
+	</div>
+	<div id='question' style="display: none;">
+		<h2 id="summary" style="display: none;"></h2>
+		<label id="answerLabel" for="answer"></label><br>
+		<input type="text" name="ending" id="answer" value="" maxlength=2><br>
+		<input type="button" id="checkAnswer" value="Проверить ответ">
+		<input type="button" id="next" value="Дальше" >
+	</div>
+	<script src="main.js"></script>
+ </body>
+</html>

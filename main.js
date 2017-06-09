@@ -17,6 +17,7 @@ var startButton = document.getElementById('startButton'),
 startButton.onclick = function() {
 	start.style.display = "none";
 	questionDiv.style.display = "block";
+	inputVal.focus();
 }	
 	
 	
@@ -74,6 +75,7 @@ nextButton.onclick = function() {
 		nextButton.disabled = true;
 		checkButton.disabled = false;
 		questionDiv.style.borderColor = "black";
+		inputVal.focus();
 	}else{
 		inputVal.style.display = "none";
 		nextButton.style.display = "none";
